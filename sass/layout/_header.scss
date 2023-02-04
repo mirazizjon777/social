@@ -1,0 +1,129 @@
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 12rem 0 7rem 0;
+  background-image: url(/images/svg/header-bg.svg);
+  background-repeat: no-repeat;
+
+  @include responsive(small) {
+    background-size: 374px 232px;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1158px;
+  padding: 0 2.4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+
+  @include responsive(large) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// left
+.header-left {
+  width: 100%;
+  max-width: 445px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include responsive(large) {
+    margin: 0 auto;
+  }
+}
+
+.header__h1 {
+  padding: 0;
+  font-weight: inherit;
+  font-size: 5.6rem;
+  line-height: 0.85;
+  letter-spacing: -2px;
+  color: $primary-color;
+  margin-bottom: 1.6rem;
+
+  @include responsive(large) {
+    text-align: center;
+  }
+
+  @include responsive(small) {
+    font-size: 4rem;
+  }
+}
+
+.header__p {
+  font-weight: 500;
+  font-size: 1.9rem;
+  line-height: 1.2;
+  letter-spacing: -0.63px;
+  color: $text-color;
+  display: flex;
+  text-align: center;
+}
+
+// right
+.header-right {
+  margin-top: 2.7rem;
+  display: flex;
+  flex-direction: column;
+}
+.header__item {
+  background-color: #f7f2f7;
+  width: 100%;
+  max-width: 445px;
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  padding-left: 3.2rem;
+  margin-bottom: 1.6rem;
+  border-radius: 0.8rem;
+
+  align-self: center;
+
+  &__h3 {
+    @include h3;
+  }
+}
+
+.hi1 {
+  align-self: flex-start;
+
+  @include responsive(large) {
+    align-self: center;
+  }
+
+  @include responsive(small) {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+.hi2 {
+  align-self: center;
+
+  @include responsive(large) {
+    align-self: center;
+  }
+
+  @include responsive(small) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.hi3 {
+  align-self: flex-end;
+
+  @include responsive(large) {
+    align-self: center;
+  }
+
+  @include responsive(small) {
+    display: flex;
+    flex-direction: column;
+  }
+}

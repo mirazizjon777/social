@@ -1,0 +1,14 @@
+.box {
+  width: 100%;
+  height: min(100%, 100vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 0.9;
+  background-image: url(/images/svg/box-bg.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+

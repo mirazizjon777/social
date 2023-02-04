@@ -1,0 +1,70 @@
+// FONTS STYLE
+
+/* league-spartan-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/league-spartan-v6-latin-regular.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("../fonts/league-spartan-v6-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* league-spartan-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/league-spartan-v6-latin-500.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("../fonts/league-spartan-v6-latin-500.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* league-spartan-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/league-spartan-v6-latin-700.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("../fonts/league-spartan-v6-latin-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+// FONTS STYLE END.
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $site-fonts;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  bottom: none;
+  outline: none;
+  background-color: transparent;
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1 {
+  font-size: 8rem;
+  line-height: 1;
+  letter-spacing: -1px;
+  font-weight: 300;
+}
+img {
+  display: block;
+}
